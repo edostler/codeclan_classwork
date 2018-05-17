@@ -1,0 +1,13 @@
+/* To hard reset your cache quickly, right-click and Inspect to open dev tools, then click and hold on the refresh button and it will give you options of refresh */
+
+body {
+  background-color: DeepSkyBlue;
+}
+
+p {
+  font-size: 20px;
+}
+
+li {
+  font-size: 18px;
+}

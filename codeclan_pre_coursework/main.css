@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://c1.staticflickr.com/6/5063/5590272954_34610a88f7_b.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: dodgerblue;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.my-image {
+  width: 200px;
+  height: 200px;
+}
+
+span {
+  color: dodgerblue;
+}
+strike {
+  color: black;
+}
+
+.moving-title h3 {
+ height: 200px;
+ position: relative;
+ width: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+ animation: moving-title 10s linear infinite alternate;
+}
+@keyframes moving-title {
+ 0%   {transform: translateX(80%) translateY(100%);}
+ 10%   {transform: translateX(65%) translateY(0%);}
+ 20%   {transform: translateX(50%) translateY(100%);}
+ 30%   {transform: translateX(45%) translateY(0%);}
+ 40%   {transform: translateX(20%) translateY(100%);}
+ 50%   {transform: translateX(70%) translateY(0%);}
+ 60%   {transform: translateX(40%) translateY(100%);}
+ 70%   {transform: translateX(20%) translateY(0%);}
+ 80%   {transform: translateX(70%) translateY(100%);}
+ 90%   {transform: translateX(30%) translateY(0%);}
+ 100% {transform: translateX(0%) translateY(100%);}
+}
+
+.moving-paddle1 h3 {
+ height: 20px;
+ position: relative;
+ width: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+ animation: moving-paddle1 10s linear infinite alternate;
+}
+@keyframes moving-paddle1 {
+ 0%   {transform: translateX(50%) translateY(0%);}
+ 10%   {transform: translateX(65%) translateY(0%);}
+ 30%   {transform: translateX(45%) translateY(0%);}
+ 50%   {transform: translateX(70%) translateY(0%);}
+ 70%   {transform: translateX(20%) translateY(0%);}
+ 90%   {transform: translateX(30%) translateY(0%);}
+ 100%   {transform: translateX(15%) translateY(0%);}
+}
+
+.moving-paddle2 h3 {
+ height: 20px;
+ position: relative;
+ width: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+ animation: moving-paddle2 10s linear infinite alternate;
+}
+@keyframes moving-paddle2 {
+ 0%   {transform: translateX(80%) translateY(100%);}
+ 20%   {transform: translateX(50%) translateY(100%);}
+ 40%   {transform: translateX(20%) translateY(100%);}
+ 60%   {transform: translateX(40%) translateY(100%);}
+ 80%   {transform: translateX(70%) translateY(100%);}
+ 100%   {transform: translateX(0%) translateY(100%);}
+}

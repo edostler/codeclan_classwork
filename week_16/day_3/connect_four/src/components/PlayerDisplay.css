@@ -1,0 +1,23 @@
+div.player-display {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table.player-display {
+  border-style: solid;
+  border-color: black;
+  background-color: sandybrown;
+}
+
+td.player-display {
+  background-color: steelblue;
+  color: white;
+  text-shadow: 2px 3px black;
+  border-color: black;
+}
+
+img {
+  display: block;
+}

@@ -1,0 +1,33 @@
+we are going to be focussing on semantic HTML - using the best available element for the job so that things cana find the data more efficiently/for SEO etc.
+
+wireframing - has the structure and content but no design
+e.g.
+
+Blog Title
+--- Naviagation
+Home
+Blog
+Contact Us
+--- List of blog posts |Side bar
+Sub heading            |info
+Abbrev                 |
+Link                   |
+---Footer
+Copyright
+
+
+CSS and code live in separate folders.
+
+Emmet takes away the pain of HTML so we use that to help us - type html:5 (or !) and hit tab in the erb/html file.
+
+child css overwrites parent css becasue it is more specific
+
+if you give a class an id, only one class should ever have one id and the id can only be used that once - these are selected by hash
+
+to select a class we use a .
+
+classes can be repeated and multiplied up with spaces: class="red large"
+
+BrowserStack for testing on all devices - free for open source - or can quickly check usingthe toggle devices icon in dev tools
+
+in forms we can only use the Get and Post methods (javascripts allows more...this later in the course) - default form method is GET

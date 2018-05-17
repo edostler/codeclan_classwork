@@ -1,0 +1,96 @@
+#this creates an array with the items in index 0 to n
+fruits = ["apple", "bananas", "grape", "orange"]
+
+#to print the whole array
+p fruits
+
+#to return first item
+p fruits[0]
+
+#will return a 'nil' value
+p fruits[4]
+
+#you can see that it will return nil for all indices between 3 and 10
+fruits[10] = "pear"
+p fruits
+
+#this will replace index 2 with pear
+fruits[2] = "pear"
+
+#this will insert pear into number 2, moving the others along
+fruits.insert(2, "pear")
+
+#this will return the last item in the array
+p fruits[-1]
+
+#prints the first item
+p fruits.first()
+
+#this will print the first two items in a new array
+p fruits.first(2)
+
+#this will print the last item
+p fruits.last
+
+#this will print the last two items in a new array
+p fruits.last(2)
+
+#the 'month - 1' here is just to make the index align with our view of month numbers, nothing special
+def number_to_month_name(month)
+  months = ["Jan", "Feb", "Mar"]
+  return months[month - 1]
+end
+p number_to_month_name(1)
+
+#creates an empty array
+my_array = []
+p my_array
+
+#also creates an empty array
+my_array = Array.new()
+p my_array
+
+#this will add a new item onto the end of the array
+fruits.push("strawberry")
+p fruits
+
+#this will take the last index item out of the array
+fruits.pop()
+p fruits
+
+#check what this did! ! ! ! !
+  fruits == "lemon"
+  p fruits
+
+#takes away from the front of the array
+fruits.shift()
+p fruits
+
+#adds in to the front of the array
+fruits.unshift("apple")
+p fruits
+
+#this deletes all instances of the item
+fruits.delete("bananas")
+p fruits
+
+#this shows that you can use numbers and strings in an array - not always good
+fruits_and_numbers = ["apple", 1, "grape", 3]
+p fruits_and_numbers
+
+#this shows that you can have an array in an crazy_array
+crazy_array = [1,2,3,4,[5,6,7]]
+
+#this is how you access a sub-array
+p crazy_array[4][0]
+
+#this shows that you can use cariables in arrays
+fruit_one = "bananas"
+fruit_two = "apple"
+new_fruits = [fruit_one, fruit_two]
+p new_fruits
+
+
+empty_table = Array.new(3) { Array.new(3) }
+#=> [[nil, nil, nil], [nil, nil, nil], [nil, nil, nil]]
+p empty_table

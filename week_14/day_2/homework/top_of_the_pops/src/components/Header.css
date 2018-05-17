@@ -1,0 +1,9 @@
+.header {
+  padding: 20px 0;
+  margin: 0 40px;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 100;
+  border-bottom-style: double;
+  border-bottom-width: 5px;
+}

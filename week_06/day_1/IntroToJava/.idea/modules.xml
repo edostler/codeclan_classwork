@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IntroToJava.iml" filepath="$PROJECT_DIR$/.idea/modules/IntroToJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IntroToJava_main.iml" filepath="$PROJECT_DIR$/.idea/modules/IntroToJava_main.iml" group="IntroToJava" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IntroToJava_test.iml" filepath="$PROJECT_DIR$/.idea/modules/IntroToJava_test.iml" group="IntroToJava" />
+    </modules>
+  </component>
+</project>

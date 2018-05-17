@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "models.Department" table = "departments">
+        <id name = "id" type = "int" column = "id">
+            <generator class="identity"/>
+        </id>
+        <property name = "title" column = "title" type = "string"/>
+        <!--below, name is the property name for Set, no column, inverse tells you which direction the one-to-many relationship is (true has the responsibility for the relationship, so department manages the employees), cascade means that when you perform an update on one it will cascade down to the other, lazy is saying whether it should bring any associated sets back with the query (so lazy=false WILL bring back the extra info)-->
+        <set name="employees" inverse="true" cascade="all" lazy="true">
+            <key>
+                <!--column name is the corresponding column name in the other table, not null means it has to take a value-->
+                <column name="department_id" not-null="true"/>
+            </key>
+            <one-to-many class="models.Employee"/>
+        </set>
+    </class>
+</hibernate-mapping>

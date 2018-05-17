@@ -1,0 +1,48 @@
+#main-map {
+  float: right;
+  height: 433px;
+  width: 835px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.list-container {
+  float:left;
+  margin: 0;
+  width: 410px;
+  height:433px;
+  background-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+}
+
+.countries-container {
+  width: 100%
+  height: 100%;
+}
+
+#delete-bucket-list {
+    background-color: hotpink;
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    display: fixed;
+    bottom: 0px;
+    left: 0px;
+    font-size: 12px;
+}
+
+
+#delete_bucket_list {
+  background-color: hotpink !important;
+}
+
+li {
+  color: white;
+  font-family: arial
+  font-size: 12px;
+}

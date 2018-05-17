@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <title>Employee Records</title>
+</head>
+
+    <nav>
+        <ul>
+            <li><a href="/departments" class="button center">Departments</a></li>
+            <li><a href="/employees" class="button center">Employees</a></li>
+            <li><a href="/managers" class="button center">Managers</a></li>
+            <li><a href="/engineers" class="button center">Engineers</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <!-- begin inner template-->
+        <div class="container">
+            #parse( $template )
+        </div>
+        <!-- end inner template-->
+    </body>
+
+</html>

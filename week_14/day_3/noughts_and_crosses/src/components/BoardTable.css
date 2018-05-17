@@ -1,0 +1,29 @@
+table {
+  border-style: solid;
+  border-color: black;
+  background-color: steelblue;
+  margin: auto;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-align: center;
+  border-style: solid;
+  min-width: 80px;
+}
+
+td#position0, #position2, #position4, #position6, #position8 {
+  background-color: lightblue;
+}
+
+td#position1, #position3, #position5, #position7 {
+  background-color: cadetblue;
+}
+
+td#position0:hover, #position2:hover, #position4:hover, #position6:hover, #position8:hover, #position1:hover, #position3:hover, #position5:hover, #position7:hover {
+  background-color: azure;
+}

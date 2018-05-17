@@ -1,0 +1,45 @@
+body {
+  color: red;
+}
+
+p {
+  color: rebeccapurple;
+}
+
+/* #first {
+  background-color: darkolivegreen;
+} */
+
+/* pixels aren;t always the same on one machine to another so we use percentages or vw's, notethey are slightly different. the same goes with text and ems.*/
+article {
+  background-color: green;
+  width: 50vw;
+  /* width: 50%; */
+  font-size: 1em;
+  margin: 1em;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+article a {
+
+}
+/* the below two are for setting up links */
+nav a, nav a:link, nav a:visited {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+  text-decoration: underline;
+}
+/* when using multiple values for padding etc the numbers you use go clockwise */
+h1 {
+  color: white;
+  background-color: hotpink;
+  padding: 22px 10px 0 50px;
+  border: 5px solid black;
+  margin: 40px 20px;
+}

@@ -1,0 +1,14 @@
+<p>Show pizza order</p>
+
+<p>First Name: <%= @order.first_name %></p>
+<p>Last Name: <%= @order.last_name %></p>
+<p>Topping: <%= @order.topping %></p>
+<p>Quantity: <%= @order.quantity %></p>
+
+<form action="/pizza-orders/<%= @order.id %>/delete" method="POST">
+  <button type="submit">Delete</button>
+</form>
+
+<!-- NOTE that you only use a form for a POST method - we use hyperlink for GET methods -->
+
+<a href="/pizza-orders/<%= @order.id %>/edit">Edit</a>

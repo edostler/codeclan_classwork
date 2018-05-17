@@ -1,0 +1,65 @@
+/* DISPLAY TYPES */
+
+/* #display-types {
+  font: 22px Helvetica;
+  border: 3px solid grey;
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 40px;
+} */
+
+#display-types span {
+  color: white;
+  background-color: #981ba2;
+}
+
+#display-types button {
+  height: 48px;
+  font-size: 18px;
+  width: 150px;
+  padding: 17px;
+}
+
+/* MOVING BLOCKS */
+
+#blocks div {
+  text-align: center;
+  font: 30px Helvetica;
+  color: white;
+  padding: 10px;
+  width: 200px;
+}
+
+.red {
+  background-color: #d9534f;
+  display: inline-block;
+}
+
+.blue {
+  background-color: #428bca;
+  display: inline-block;
+  display: none;
+  /* visibility: hidden; */
+}
+
+/* when you have two of the same commands in the above it is the second one that is used, it overrides the first. */
+
+.green {
+  background-color: #5cb85c;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.button {
+  background-color: seagreen;
+  border: 1px solid black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 50px;
+  height: 5px;
+  display: inline-block;
+}

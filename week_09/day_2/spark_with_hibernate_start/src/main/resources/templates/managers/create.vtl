@@ -1,0 +1,28 @@
+<p class="pageHeader">New Manager</p>
+
+<form action="/managers" method="post">
+
+    <!--HERE, FOR AND ID REFER TO EACH OTHER (IN LABEL AND INPUT) AND NAME IS THE ONE THAT IS POSTED BACK-->
+
+    <label for="firstName">First Name:</label>
+    <input id="firstName" class="inputbox" type="text" name="firstName" required="required" placeholder="Enter First Name"/>
+
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" class="inputbox" type="text" name="lastName" required="required"/>
+
+    <label for="department_select">Department:</label>
+    <select name="department" id="department_select">
+        #foreach($department in $departments)
+            <option value="$department.getId()">$department.getTitle()</option>
+        #end
+    </select>
+
+    <label for="salary">Salary:</label>
+    <input id="salary" class="inputbox" type="number" name="salary" required="required"/>
+
+    <label for="budget">Budget:</label>
+    <input id="budget" class="inputbox" type="number" name="budget" required="required"/>
+
+    <input type="submit" value="Save" class="button"/>
+
+</form>

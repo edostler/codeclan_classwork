@@ -1,0 +1,7 @@
+<% for instructor in @instructors %>
+  <h1>instuctor name is <%= instructor %> </h1>
+  <% end %>
+
+<% @instructors.shuffle.each do |instructor| %>
+  <h1>instuctor name is <%= instructor %> </h1>
+  <% end %>

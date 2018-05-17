@@ -1,0 +1,20 @@
+<p class="pageHeader">All Departments</p>
+
+<div>
+    <a href="/departments/new" class="button center">New Department</a>
+</div>
+
+<div class="container">
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Team</th>
+        </tr>
+        #foreach($department in $departments)
+        <tr>
+            <td>$department.getTitle()</td>
+            <td><a href="/department/team/$department.getId()" class="button center">View Team</a></td>
+        </tr>
+        #end
+    </table>
+</div>

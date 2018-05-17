@@ -1,0 +1,27 @@
+<p>Edit the details of this order</p>
+<!-- NOTE that the for and id in each label/input or label/select match an the name matches the database heading/instance variable - VERY IMPORTANT! -->
+
+<form action="/pizza-orders/<%= @order.id %>" method="POST">
+
+  <label for="first_name">First Name:</label>
+  <input type="text" name="first_name" id="first_name" value="<%= @order.first_name %>"/>
+
+  <label for="last_name">Last Name:</label>
+  <input type="text" name="last_name" id="last_name" value="<%= @order.last_name %>"/>
+
+  <label for="pizza-select">Select a topping:</label>
+  <select name="topping" id="pizza-select">
+    <option value="<%= @order.topping %>"><%= @order.topping %></option>
+    <option value="null" disabled>------</option>
+    <option value="Margherita">Margherita</option>
+    <option value="Vegetarian">Vegetarian</option>
+  </select>
+
+  <!-- selected - this gives the ability of selecting one of the options - it goes on the option tag - if it is to be used while in a ruby tag (in a for loop for example, then you need to use "selected" in quotes) -->
+
+  <label for="quantity">Quanity</label>
+  <input type="number" name="quantity" id="quantity" value="<%= @order.quantity %>"/>
+
+  <input type="submit" value="Update Pizza">
+
+</form>

@@ -1,0 +1,29 @@
+Polymorphism & Composition Homework - Quiz
+Polymorphism
+1. What does the word 'polymorphism' mean?
+Polymorphism is used to describe the behaviour of a class that can take many forms.
+
+2. What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+An example of this would be that one class can be an umbrella term for many classes that are all disparate from each other but yet are still a type of that single class - e.g. a student and an instructor are both forms of a person.
+
+3. What can we use to implement polymorphism in Java?
+Polymorphism can be implemented via the use of abstract classes or interfaces.
+
+4. How many 'forms' can an object take when using polymorphism?
+As many as we want. For example there can be many forms of a person. However, looking at our implementations polymorphism, any one of those forms can only extend to a single type when using abstract classes (i.e. if a student is a form of a person it can't also be a form of a teenager) - this restriction doesn't apply to the interfaces method though.
+
+5. Give an example of when you could use polymorphism.
+When modelling a system that requires multiple classes that all forms of the same thing, for example different types of staff.
+
+Composition
+6. What do we mean by 'composition' in reference to object-oriented programming?
+Composition refers to when one class HAS A-nother class as one of the properties that make it.
+
+7. When would you use composition? Provide a simple example in Java.
+It is better to favour composition over inheritance where possible, creating classes of other classes to access their methods. For example, a football team has a goalkeeper, rather than a team is made up of an array of Players, with different positions like goalkeeper beings subclasses of Player.
+
+8. What is/are the advantage(s) of using composition?
+It lets us make a class that can use behaviours from another class or group of classes without relying on inheritance dependancies that can become messy or complicated in larger models.
+
+9. What happens to the behaviours when the object composed of them is destroyed?
+In composition, the object composed of other behaviours owns those behaviours. This means that when the object is destroyed all of its behaviours are also destroyed.

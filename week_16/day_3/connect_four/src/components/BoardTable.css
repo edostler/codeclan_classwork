@@ -1,0 +1,31 @@
+table {
+  border-style: solid;
+  border-color: black;
+  background-color: steelblue;
+  margin: auto;
+}
+
+td {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  min-width: 50px;
+}
+
+td.light {
+  background-color: lightblue;
+}
+
+td.dark {
+  background-color: cadetblue;
+}
+
+td.board-input-position:hover {
+  background-color: azure;
+}
+
+.board-input {
+  margin-bottom: 5px;
+}

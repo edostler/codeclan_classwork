@@ -1,0 +1,25 @@
+<table>
+
+    <tr>
+        <th>Flight Number</th>
+        <th>Airline</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Seats<th>
+    </tr>
+
+    #foreach($flight in $flights)
+        <tr>
+            <td>$flight.getFlightNumber()</td>
+            <td>$flight.getAirline()</td>
+            <td>$flight.getDepartureAirport()</td>
+            <td>$flight.getArrivalAirport()</td>
+            #if ($flight.isSeatsAvailable())
+                <td>Seats Available</td>
+            #else
+                <td>Seats Not Available</td>
+            #end
+        </tr>
+    #end
+
+</table>

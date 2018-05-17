@@ -1,0 +1,19 @@
+.chart-position {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.chart-details {
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding-right: 40px;
+}
+
+article {
+  border-bottom-style: solid;
+  border-bottom-color: darkblue;
+  font-family: serif;
+}

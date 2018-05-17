@@ -1,0 +1,39 @@
+.status-display {
+  text-align: center;
+  width: 380px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: double;
+  border-width: 5px;
+  border-color: black;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: sandybrown;
+  color: white;
+  text-shadow: 2px 3px black;
+}
+
+.status-display-button {
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: double;
+  border-width: 5px;
+  border-color: black;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: steelblue;
+  color: white;
+  text-shadow: 2px 3px black;
+}
+
+.status-display-button:hover {
+  background-color: sandybrown;
+}
